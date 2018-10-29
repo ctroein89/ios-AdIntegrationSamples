@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     if (!options) {
-         options = [[NSMutableArray alloc] initWithObjects: @"Flurry Banners", @"Flurry Takovers",  @"Flurry Native", @"Flurry Card",    nil];
+         options = [[NSMutableArray alloc] initWithObjects: @"Flurry Takeovers",  @"Flurry Native",    nil];
     }
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -98,7 +98,7 @@
     if ([selection isEqualToString:@"Flurry Banners"]) {
         [self performSegueWithIdentifier:@"banners" sender:self];
     }
-    else if ([selection isEqualToString:@"Flurry Takovers"]) {
+    else if ([selection isEqualToString:@"Flurry Takeovers"]) {
         [self performSegueWithIdentifier:@"takeovers" sender:nil];
     }
     else if ([selection isEqualToString:@"Flurry Native"]) {
